@@ -1,0 +1,20 @@
+{
+  "name": "questions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "questions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mysql": "mysql -u root",
+    "load": "node server/helper/questions.js",
+    "erase": "mysql -u root -p < server/database/schema.sql",
+    "start": "cross-env NODE_OPTIONS=--max-old-space-size=4096 webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "moment": "^2.29.1",
+    "mysql": "^2.18.1"
+  }
+}
