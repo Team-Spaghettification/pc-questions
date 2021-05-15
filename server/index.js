@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const db = require('../database/db.js');
 const app = express();
-const port = 3306;
+const port = 3001;
 
 const Moment = require('moment')
 
@@ -181,7 +181,7 @@ app.put('/qa/answers/:answer_id/report', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log('listening at port 3306');
+  console.log('listening at port 3001');
 })
 
 
